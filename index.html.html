@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÉTODO A.C.E.S: De Zero a R$ 10 Mil em 90 Dias | Sistema Científico dos Campeões</title>
+    <meta name="description" content="Descubra o método científico que está transformando vidas em 90 dias. Aumente sua produtividade e renda com estratégias comprovadas.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .aces-logo {
+            font-size: 4em;
+            font-weight: 900;
+            letter-spacing: 0.2em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .headline {
+            font-size: 3.2em;
+            font-weight: 800;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subheadline {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            position: relative;
+            z-index: 2;
+            font-weight: 500;
+        }
+        
+        .urgency-banner {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 30px 0;
+            font-weight: 700;
+            font-size: 1.1em;
+            position: relative;
+            z-index: 2;
+            animation: pulse 2s infinite;
+            box-shadow: 0 10px 30px rgba(255,107,107,0.4);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* CTA BUTTON */
+        .cta-button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 20px 50px;
+            font-size: 1.3em;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 40px rgba(255,107,107,0.4);
+            position: relative;
+            z-index: 2;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(255,107,107,0.6);
+        }
+        
+        .cta-button i {
+            margin-left: 10px;
+        }
+        
+        /* PRICE SECTION */
+        .price-section {
+            background: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .price-container {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 3px solid #dee2e6;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-container::before {
+            content: '🔥 OFERTA LIMITADA';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 8px 25px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 700;
+        }
+        
+        .original-price {
+            font-size: 1.5em;
+            text-decoration: line-through;
+            color: #999;
+            margin-bottom: 10px;
+        }
+        
+        .current-price {
+            font-size: 3.5em;
+            font-weight: 900;
+            color: #27ae60;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .discount-badge {
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .payment-options {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        /* BENEFITS SECTION */
+        .benefits-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .benefits-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 60px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .benefit-item {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .benefit-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+        
+        .benefit-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-description {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        /* SOCIAL PROOF */
+        .social-proof {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .social-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .social-subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 60px;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .stat-item {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 40px;
+            border-radius: 20px;
+            border: 3px solid #dee2e6;
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: 900;
+            color: #667eea;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        /* TESTIMONIALS */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .testimonial {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 40px;
+            border-radius: 20px;
+            border-left: 6px solid #667eea;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-text {
+            font-size: 1.1em;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .testimonial-result {
+            color: #27ae60;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        /* BONUS SECTION */
+        .bonus-section {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            padding: 80px 0;
+            color: #2c3e50;
+        }
+        
+        .bonus-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .bonus-subtitle {
+            font-size: 1.3em;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 600;
+        }
+        
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .bonus-item {
+            background: rgba(255,255,255,0.9);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .bonus-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        
+        .bonus-name {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .bonus-value {
+            font-size: 1.1em;
+            color: #27ae60;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .bonus-description {
+            font-size: 1em;
+            color: #666;
+        }
+        
+        /* GUARANTEE SECTION */
+        .guarantee-section {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .guarantee-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 60px;
+            border-radius: 20px;
+            border: 3px solid #27ae60;
+            position: relative;
+        }
+        
+        .guarantee-badge {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        
+        .guarantee-icon {
+            font-size: 4em;
+            color: #27ae60;
+            margin-bottom: 30px;
+        }
+        
+        .guarantee-title {
+            font-size: 2.2em;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .guarantee-text {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        /* URGENCY SECTION */
+        .urgency-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .urgency-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .countdown-container {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px auto;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .countdown-item {
+            text-align: center;
+        }
+        
+        .countdown-number {
+            font-size: 3em;
+            font-weight: 900;
+            display: block;
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .countdown-label {
+            font-size: 1em;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+        
+        .urgency-text {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+        
+        /* FAQ SECTION */
+        .faq-section {
+            background: white;
+            padding: 80px 0;
+        }
+        
+        .faq-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #2c3e50;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #dee2e6;
+        }
+        
+        .faq-question {
+            padding: 25px;
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #2c3e50;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: rgba(102,126,234,0.1);
+        }
+        
+        .faq-answer {
+            padding: 0 25px 25px;
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+        
+        /* FINAL CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .final-title {
+            font-size: 3em;
+            font-weight: 800;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .final-subtitle {
+            font-size: 1.4em;
+            margin-bottom: 50px;
+            opacity: 0.95;
+        }
+        
+        .final-cta-button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 25px 60px;
+            font-size: 1.5em;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 20px 50px rgba(255,107,107,0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .final-cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 60px rgba(255,107,107,0.6);
+        }
+        
+        .security-badges {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .security-badge {
+            background: rgba(255,255,255,0.1);
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            backdrop-filter: blur(10px);
+        }
+        
+        /* FOOTER */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-text {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 2.2em;
+            }
+            
+            .aces-logo {
+                font-size: 2.5em;
+            }
+            
+            .subheadline {
+                font-size: 1.2em;
+            }
+            
+            .cta-button {
+                padding: 18px 40px;
+                font-size: 1.1em;
+            }
+            
+            .current-price {
+                font-size: 2.5em;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .countdown {
+                gap: 15px;
+            }
+            
+            .countdown-number {
+                font-size: 2em;
+                padding: 15px;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .price-container,
+            .guarantee-container {
+                padding: 30px;
+            }
+        }
+        
+        /* ANIMATIONS */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        /* FLOATING ELEMENTS */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <section class="header">
+        <div class="container">
+            <div class="aces-logo floating">A.C.E.S</div>
+            <h1 class="headline fade-in-up">De Zero a R$ 10 Mil em 90 Dias</h1>
+            <p class="subheadline fade-in-up">O Sistema Científico dos Campeões que está Transformando Vidas no Brasil Inteiro</p>
+            <div class="urgency-banner">
+                <i class="fas fa-fire"></i> ÚLTIMAS 48 HORAS - DESCONTO DE 66%
+            </div>
+            <a href="#comprar" class="cta-button">
+                QUERO TRANSFORMAR MINHA VIDA AGORA
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- PRICE SECTION -->
+    <section class="price-section" id="comprar">
+        <div class="container">
+            <div class="price-container">
+                <div class="original-price">De R$ 497,00</div>
+                <div class="current-price">R$ 167,00</div>
+                <div class="discount-badge">66% DE DESCONTO</div>
+                <div class="payment-options">
+                    <strong>💳 Até 12x de R$ 13,92 no cartão</strong><br>
+                    <strong>🎯 PIX à vista disponível</strong>
+                </div>
+                <a href="https://pay.hotmart.com/B12345678" class="cta-button">
+                    GARANTIR MINHA VAGA AGORA
+                    <i class="fas fa-lock"></i>
+                </a>
+                <p style="font-size: 0.9em; color: #666; margin-top: 15px;">
+                    <i class="fas fa-shield-alt"></i> Compra 100% Segura | Garantia de 30 Dias
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="benefits-title">O Que Você Vai Descobrir no Método A.C.E.S</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎯</div>
+                    <h3 class="benefit-title">AÇÃO Imediata</h3>
+                    <p class="benefit-description">Como sair da paralisia por análise e começar a agir HOJE, mesmo sem ter todas as respostas</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚡</div>
+                    <h3 class="benefit-title">CONSISTÊNCIA Automática</h3>
+                    <p class="benefit-description">O sistema para criar hábitos que geram R$ 300-500 por dia automaticamente</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚙️</div>
+                    <h3 class="benefit-title">EFICIÊNCIA Máxima</h3>
+                    <p class="benefit-description">Como trabalhar 4 horas e produzir mais que em 12 horas (Princípio 80/20 otimizado)</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🏆</div>
+                    <h3 class="benefit-title">SUCESSO Garantido</h3>
+                    <p class="benefit-description">O plano exato de 90 dias para alcançar seus primeiros R$ 10 mil extras</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🧠</div>
+                    <h3 class="benefit-title">Método Científico</h3>
+                    <p class="benefit-description">Baseado em pesquisas de Harvard e Stanford, validado por mais de 3.000 pessoas</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📈</div>
+                    <h3 class="benefit-title">Resultados Mensuráveis</h3>
+                    <p class="benefit-description">Sistema de métricas para acompanhar seu progresso e garantir os resultados</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#comprar" class="cta-button">
+                    SIM, EU QUERO O MÉTODO A.C.E.S
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section class="social-proof">
+        <div class="container">
+            <h2 class="social-title">Mais de 3.000 Pessoas Já Transformaram Suas Vidas</h2>
+            <p class="social-subtitle">Resultados reais de quem aplicou o Método A.C.E.S</p>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">94%</span>
+                    <div class="stat-label">Aumentaram a Produtividade</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">87%</span>
+                    <div class="stat-label">Aumentaram a Renda</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">91%</span>
+                    <div class="stat-label">Alcançaram Objetivos</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">96%</span>
+                    <div class="stat-label">Recomendam o Método</div>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Em 60 dias, saí de R$ 2.500 para R$ 8.000 mensais. O Método A.C.E.S mudou completamente minha vida financeira!"</p>
+                    <div class="testimonial-author">Maria Silva, Consultora</div>
+                    <div class="testimonial-result">Resultado: +220% de aumento na renda</div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Nunca pensei que poderia ser tão produtivo. Agora trabalho menos horas e ganho 3x mais. Incrível!"</p>
+                    <div class="testimonial-author">João Santos, Empreendedor</div>
+                    <div class="testimonial-result">Resultado: Triplicou a renda em 90 dias</div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"O método é simples, mas poderoso. Consegui focar nos 20% que realmente importam e os resultados apareceram rapidamente."</p>
+                    <div class="testimonial-author">Ana Costa, Freelancer</div>
+                    <div class="testimonial-result">Resultado: R$ 12.000 no primeiro mês</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BONUS SECTION -->
+    <section class="bonus-section">
+        <div class="container">
+            <h2 class="bonus-title">🎁 BÔNUS EXCLUSIVOS</h2>
+            <p class="bonus-subtitle">Valor Total dos Bônus: R$ 497,00 - GRÁTIS para você!</p>
+            
+            <div class="bonus-grid">
+                <div class="bonus-item">
+                    <div class="bonus-icon">📋</div>
+                    <h3 class="bonus-name">Templates e Checklists A.C.E.S</h3>
+                    <div class="bonus-value">Valor: R$ 97</div>
+                    <p class="bonus-description">Planilhas prontas para implementar o método imediatamente</p>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-icon">💬</div>
+                    <h3 class="bonus-name">Scripts de Vendas Comprovados</h3>
+                    <div class="bonus-value">Valor: R$ 147</div>
+                    <p class="bonus-description">Scripts que convertem 30%+ testados por milhares de vendedores</p>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-icon">🛡️</div>
+                    <h3 class="bonus-name">Plano de Emergência Financeira</h3>
+                    <div class="bonus-value">Valor: R$ 127</div>
+                    <p class="bonus-description">Como se proteger de crises e manter a renda estável</p>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-icon">🎧</div>
+                    <h3 class="bonus-name">Áudios Motivacionais A.C.E.S</h3>
+                    <div class="bonus-value">Valor: R$ 126</div>
+                    <p class="bonus-description">Mindset de campeão para manter a motivação em alta</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#comprar" class="cta-button" style="background: linear-gradient(45deg, #2c3e50, #34495e);">
+                    QUERO TODOS OS BÔNUS AGORA
+                    <i class="fas fa-gift"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUARANTEE -->
+    <section class="guarantee-section">
+        <div class="container">
+            <div class="guarantee-container">
+                <div class="guarantee-badge">GARANTIA BLINDADA</div>
+                <div class="guarantee-icon">🛡️</div>
+                <h2 class="guarantee-title">Garantia Incondicional de 30 Dias</h2>
+                <p class="guarantee-text">
+                    Se você não aumentar sua produtividade e renda em 30 dias aplicando o Método A.C.E.S, 
+                    devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. 
+                    <strong>Você não tem nada a perder e tudo a ganhar!</strong>
+                </p>
+                <a href="#comprar" class="cta-button">
+                    COMEÇAR SEM RISCOS AGORA
+                    <i class="fas fa-shield-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- URGENCY -->
+    <section class="urgency-section">
+        <div class="container">
+            <h2 class="urgency-title">⏰ OFERTA EXPIRA EM:</h2>
+            
+            <div class="countdown-container">
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">23</span>
+                        <div class="countdown-label">HORAS</div>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">47</span>
+                        <div class="countdown-label">MINUTOS</div>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">32</span>
+                        <div class="countdown-label">SEGUNDOS</div>
+                    </div>
+                </div>
+                
+                <p class="urgency-text">
+                    Após o tempo esgotar, o preço volta para R$ 497,00 e os bônus não estarão mais disponíveis!
+                </p>
+                
+                <a href="#comprar" class="cta-button">
+                    GARANTIR DESCONTO AGORA
+                    <i class="fas fa-clock"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="faq-title">Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        O Método A.C.E.S funciona para qualquer pessoa?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! O método foi testado com mais de 3.000 pessoas de diferentes idades, profissões e níveis de experiência. 
+                        Funciona para empreendedores, funcionários, estudantes e qualquer pessoa que queira aumentar sua produtividade e renda.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quanto tempo leva para ver os primeiros resultados?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        A maioria das pessoas vê os primeiros resultados em 7-14 dias. Mudanças significativas acontecem em 30 dias, 
+                        e a transformação completa em 90 dias seguindo o plano passo a passo.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Preciso de conhecimento prévio para aplicar o método?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Não! O Método A.C.E.S foi criado para ser simples e prático. Tudo é explicado passo a passo, 
+                        com exemplos reais e templates prontos para usar imediatamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como funciona a garantia de 30 dias?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Se você não ficar satisfeito por qualquer motivo, basta enviar um e-mail em até 30 dias 
+                        e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Recebo o material imediatamente após a compra?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Após a confirmação do pagamento, você recebe imediatamente o acesso ao ebook completo 
+                        e todos os bônus por e-mail. Pode começar a aplicar o método hoje mesmo!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="final-title">Sua Transformação Começa AGORA!</h2>
+            <p class="final-subtitle">
+                Não deixe para amanhã a mudança que pode começar hoje. 
+                Milhares de pessoas já transformaram suas vidas com o Método A.C.E.S.
+            </p>
+            
+            <a href="https://pay.hotmart.com/B12345678" class="final-cta-button">
+                TRANSFORMAR MINHA VIDA AGORA
+                <i class="fas fa-rocket"></i>
+            </a>
+            
+            <div class="security-badges">
+                <div class="security-badge">
+                    <i class="fas fa-lock"></i> Compra Segura
+                </div>
+                <div class="security-badge">
+                    <i class="fas fa-shield-alt"></i> Garantia 30 Dias
+                </div>
+                <div class="security-badge">
+                    <i class="fas fa-medal"></i> Método Comprovado
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2025 Bruna Castro - Método A.C.E.S. Todos os direitos reservados.<br>
+                Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como uma garantia de resultados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            const distance = tomorrow.getTime() - now;
+
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    // Close all other answers
+                    document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                    document.querySelectorAll('.faq-question i').forEach(i => i.style.transform = 'rotate(0deg)');
+                    
+                    // Open this answer
+                    answer.style.display = 'block';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.benefit-item, .stat-item, .testimonial, .bonus-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+
